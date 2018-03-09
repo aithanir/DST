@@ -1,0 +1,78 @@
+/*  Pips Pool */
+$health_base: #fd9a28;
+$health_warning: #ff5126;
+$health_danger: #d50000;
+$health_depleted: red;
+
+$sanity_base: #26A7FF;
+$sanity_warning: #268AFF;
+$sanity_danger: #162C9B;
+$sanity_depleted: blue;
+
+
+div.ds_aithanir_brimstone {
+
+  .pips_pool {
+    position: relative;
+    z-index: 2;
+    float: right;
+    top: 3px;
+    height: 17px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 2px;
+
+    .pip {
+      position: absolute;
+      top: -2px;
+      height: 15px;
+      width: 15px;
+      display: inline-block;
+
+      &.pipOn {
+        background-image: url(https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on.png);
+      }
+
+      &.pipOff {
+        background-image: url(https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png);
+      }
+    }
+
+
+
+    &.dsf_health {
+      .pip.pipOn {
+        background-image:url('../images/health_pip_on.png');
+
+        &.warning { background-image:url('../images/health_pip_on_warning.png'); }
+        &.danger  { background-image:url('../images/health_pip_on_danger.png'); }
+      }
+
+
+    }
+
+    &.dsf_sanity {
+      .pip.pipOn {
+        background-image:url('../images/sanity_pip_on.png');
+
+        &.warning { background-image:url('../images/sanity_pip_on_warning.png'); }
+        &.danger, &.depleted  { background-image:url('../images/sanity_pip_on_danger.png'); }
+      }
+    }
+  }
+
+  .pool_status{
+    position:absolute;
+    top: 3px;
+    left: 3px;
+    visibility: hidden;
+
+    &.warning { color: $health_warning }
+    &.danger { color: $health_danger }
+    &.depleted {color: $health_depleted; font-weight: bold; font-style: italic; text-decoration: line-through }
+  }
+
+
+
+
+}
+
