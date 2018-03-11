@@ -53,6 +53,8 @@ div.ds_aithanir_brimstone .pool_status {
   padding: 0px 3px 0px 3px;
   position: relative;
   display: inline-block; }
+.csx .section {
+  margin: 0 0 1em 1px; }
 .csx .ShortSection {
   display: inline-block;
   width: 100%;
@@ -61,6 +63,12 @@ div.ds_aithanir_brimstone .pool_status {
   min-height: 50px; }
 .csx .section a {
   text-decoration: none; }
+.csx .portraitholder {
+  border: none; }
+  .csx .portraitholder .portrait {
+    background-color: transparent; }
+    .csx .portraitholder .portrait img {
+      border: 1px solid #554220; }
 
 /*  Splat Specific: */
 div.ds_aithanir_brimstone {
@@ -95,11 +103,29 @@ div.ds_aithanir_brimstone {
       color: #777;
       font-size: 1.7rem;
       margin: 0px 0px 9px 0px; }
+  div.ds_aithanir_brimstone .page_foot {
+    border-top: solid 1px #554220; }
+    div.ds_aithanir_brimstone .page_foot .dsf_campaign, div.ds_aithanir_brimstone .page_foot .dsf_player {
+      font-family: 'Special Elite', serif;
+      text-transform: none;
+      font-size: 0.75rem;
+      color: #777; }
+    div.ds_aithanir_brimstone .page_foot .copyright {
+      font-size: 0.6rem; }
+  div.ds_aithanir_brimstone .dossier .group {
+    display: inline-block;
+    width: 100%; }
+  div.ds_aithanir_brimstone .dossier .portrait {
+    height: 200px;
+    width: 200px;
+    background-image: url(../../../common/images/attach_photo.png); }
   div.ds_aithanir_brimstone .head {
     border-bottom: solid 1px #554220; }
   div.ds_aithanir_brimstone a {
     text-decoration: none;
     color: #554220; }
+  div.ds_aithanir_brimstone dl {
+    margin: 0; }
   div.ds_aithanir_brimstone .tab.crunch {
     background: url("https://chainsawxiv.github.io/DST/common/images/crunch.png") no-repeat 50% 50%, url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png");
     background-size: 61% 70%, 100% 100%; }

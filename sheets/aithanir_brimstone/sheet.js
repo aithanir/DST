@@ -4,6 +4,7 @@ csx_opts = {
     'uiContainer': function(){return document;},
     'defaultFieldValue':'Click to edit',
     'imagePath':'https://chainsawxiv.github.io/DST/common/images/',
+    'pipThresholds':[0,14,28,42,59,73,87,101,118,132,146,160,177,191,205,219,236],
     'preloadFiles':[
         'add.png',
         'add_hover.png',
@@ -43,18 +44,19 @@ csx_opts = {
 };
 
 aithanir_health = {
+    'base':4,
     'threshold':{'warning':0, 'danger':-6 },
     'limit': -12
 }
 
 aithanir_stability = {
+    'base': 4,
     'threshold': {'warning':0, 'danger':-6},
     'limit': -12
 }
 
 // Master Startup
 function aithanir_brimstone_dataPostLoad(data){
-    console.log("dataPostLoad");
     csx_opts.defaultContext = document.getElementById(data.containerId);
     csx_opts.uiContainer = csx_opts.defaultContext.querySelector('.uicontainer');
     csx_opts.isEditable = data.isEditable;
@@ -108,7 +110,7 @@ function aithanir_brimstone_setup(context){
 
 // Shutdown Before Save
 function aithanir_brimstone_dataPreSave(){
-    console.log("Punta")
+
     // Default the context if not set
     var context = csx_opts.defaultContext;
 
@@ -121,9 +123,8 @@ function aithanir_brimstone_dataPreSave(){
     }
 
     var pip_pools = context.querySelectorAll('.pips_pool');
-    console.log("AlPAH");
+
     for (var i = 0; i < pip_pools.length; i++){
-        console.log("BRAVO");
         if (pip_pools[i].parentNode.className.match(/proto/))
             continue;
         pip_pools[i].unrender();
@@ -145,10 +146,18 @@ function aithanir_brimstone_dataPreSave(){
 
 
 function aithanir_get_general_rating(name){
+    if(!dynamic_sheet_attrs)
+        return 0;
+    if(!dynamic_sheet_attrs.general)
+        return 0;
     var general = JSON.parse(dynamic_sheet_attrs.general.toLowerCase());
+    console.log("golf");
+    console.log(general);
     var ability = general.find(function(n){ return n.name == name.toLowerCase();})
     if(ability) {
         return parseInt(ability.rating);
+    }else{
+        return 0;
     }
 }
 
@@ -157,8 +166,6 @@ function aithanir_get_general_rating(name){
 function aithanir_pip_pools(context){
     var pips_per_row = 8;
 
-
-    console.log('pip_pools');
 
     // Default the context if not set
     if (!context) context = document;
@@ -175,7 +182,7 @@ function aithanir_pip_pools(context){
             continue;
 
         // Set the pixel threshold for each pip
-        field.pipThresholds = [0,14,28,42,59,73,87,101,118,132,146,160,177,191,205,219,236];
+        field.pipThresholds = (csx_opts.pipThresholds) ? csx_opts.pipThresholds :[0,14,28,42,59,73,87,101,118,132,146,160,177,191,205,219,236];
         field.pipSpacing = 17;
         field.pipWidth = 15.0;
         field.pipLineHeight = 17.0;
@@ -194,7 +201,6 @@ function aithanir_pip_pools(context){
         // Gets the total number of possible pips for the field
         field.range = function(){
 
-            console.log(this.rangeCache);
             // Return cached value if it exists
             if(this.rangeCache != null)
                 return this.rangeCache;
@@ -203,7 +209,7 @@ function aithanir_pip_pools(context){
             if(ability){
                 var rating = aithanir_get_general_rating( ability );
                 if(!isNaN(rating)){
-                    var range = rating+4;
+                    var range = rating+aithanir_health.base;
                     this.rangeCache = range;
                     return range;
                 }
@@ -226,6 +232,7 @@ function aithanir_pip_pools(context){
 
             // Get the value from the text content, cache, and return
             var value = this.innerHTML;
+            value = (isNaN(value) || value==0) ? aithanir_health.base : value;
 
             // Catch and fix rare cases of HTML being saved instead of a number
             if(isNaN(value)){
@@ -236,7 +243,6 @@ function aithanir_pip_pools(context){
                     value = 0;
             }
 
-            if (this.innerHTML == '') value = 0;
             this.valueCache = value;
             return value.toString();
 
@@ -326,21 +332,33 @@ function aithanir_pip_pools(context){
 
             // Display any status messages
             if( this.isWarning(this.value()) ){
-                this.parentNode.querySelectorAll(".pool_status.warning").forEach(function(t){ t.style.visibility = "visible"; });
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.warning"),function(t){
+                    t.style.visibility = "visible";
+                });
             }else{
-                this.parentNode.querySelectorAll(".pool_status.warning").forEach(function(t){ t.style.visibility = "hidden"; })
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.warning"),function(t){
+                    t.style.visibility = "hidden";
+                });
             }
 
             if( this.isDanger(this.value()) ){
-                this.parentNode.querySelectorAll(".pool_status.danger").forEach(function(t){ t.style.visibility = "visible"; });
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.danger"),function(t){
+                    t.style.visibility = "visible";
+                });
             }else{
-                this.parentNode.querySelectorAll(".pool_status.danger").forEach(function(t){ t.style.visibility = "hidden"; })
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.danger"),function(t){
+                    t.style.visibility = "hidden";
+                });
             }
 
             if( this.isDepleted(this.value()) ){
-                this.parentNode.querySelectorAll(".pool_status.depleted").forEach(function(t){ t.style.visibility = "visible"; });
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.depleted"),function(t){
+                    t.style.visibility = "visible";
+                });
             }else{
-                this.parentNode.querySelectorAll(".pool_status.depleted").forEach(function(t){ t.style.visibility = "hidden"; })
+                Array.prototype.forEach.call(this.parentNode.querySelectorAll(".pool_status.depleted"),function(t){
+                    t.style.visibility = "hidden";
+                });
             }
 
             // Activate the pips
@@ -412,4 +430,51 @@ function aithanir_pip_pools(context){
         field.render();
 
     }
+}
+
+
+
+// https://tc39.github.io/ecma262/#sec-array.prototype.find
+if (!Array.prototype.find) {
+    Object.defineProperty(Array.prototype, 'find', {
+        value: function(predicate) {
+            // 1. Let O be ? ToObject(this value).
+            if (this == null) {
+                throw new TypeError('"this" is null or not defined');
+            }
+
+            var o = Object(this);
+
+            // 2. Let len be ? ToLength(? Get(O, "length")).
+            var len = o.length >>> 0;
+
+            // 3. If IsCallable(predicate) is false, throw a TypeError exception.
+            if (typeof predicate !== 'function') {
+                throw new TypeError('predicate must be a function');
+            }
+
+            // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
+            var thisArg = arguments[1];
+
+            // 5. Let k be 0.
+            var k = 0;
+
+            // 6. Repeat, while k < len
+            while (k < len) {
+                // a. Let Pk be ! ToString(k).
+                // b. Let kValue be ? Get(O, Pk).
+                // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
+                // d. If testResult is true, return kValue.
+                var kValue = o[k];
+                if (predicate.call(thisArg, kValue, k, o)) {
+                    return kValue;
+                }
+                // e. Increase k by 1.
+                k++;
+            }
+
+            // 7. Return undefined.
+            return undefined;
+        }
+    });
 }

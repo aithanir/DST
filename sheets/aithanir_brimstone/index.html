@@ -68,26 +68,23 @@
                     <!-- Sidebar -->
                     <div class="column thirdwidth colspace">
 
-                        <div class="section">
-                            <div class="portraitholder">
-                                <span class="portrait readonly dsf dsf_avatar_image">.</span>
+                        <div class="section dossier">
+                            <div class="group">
+                                <div class="portraitholder">
+                                    <span class="portrait readonly dsf dsf_avatar_image"></span>
+                                </div>
                             </div>
-                            <div class="group dossier">
-                                <dl class="dossier">
+
+                            <div class="group">
+                                <dl>
                                     <dt>D/O/B</dt>
                                     <dd><span class="dsf dsf_dob" defaultString="dd/mm/yy">dd/mm/yy</span></dd>
                                     <dt>Nationality</dt>
-                                    <dd><span class="dsf dsf_nationality" defaultString=""></span></dd>
-                                    <dt>Department</dt>
-                                    <dd><span class="dsf dst_campaign_link" defaultString=""></span></dd>
-                                    <dt>Branch</dt>
-                                    <dd><span class="dsf dsf_type" defaultString=""></span></dd>
+                                    <dd><span class="dsf dsf_nationality" defaultString="Click to Edit">Click to Edit</span></dd>
                                     <dt>Occupation</dt>
-                                    <dd><span class="dsf dsf_occupation" defaultString=""></span></dd>
+                                    <dd><span class="dsf dsf_occupation" defaultString="Click to Edit">Click to Edit</span></dd>
                                     <dt>Education</dt>
-                                    <dd><span class="dsf dsf_education" defaultString=""></span></dd>
-                                    <dt>Drive</dt>
-                                    <dd><span class="dsf dsf_drive" defaultString=""></span></dd>
+                                    <dd><span class="dsf dsf_education" defaultString="Click to Edit">Click to Edit</span></dd>
                                 </dl>
                             </div>
                         </div>
@@ -181,9 +178,9 @@
                                     <div></div>
                                 </div>
                                 <span signlerow>
-				<span class="edit dslf dslf_case_name" defaultString="Case Name">Case Name</span> (
-				<span class="edit dslf dslf_date_awarded" defaultString="yyyy/mm/dd">yyyy/mm/dd</span>)
-				</span>
+                                    <span class="edit dslf dslf_case_name" defaultString="Case Name">Case Name</span> (
+                                    <span class="edit dslf dslf_date_awarded" defaultString="yyyy/mm/dd">yyyy/mm/dd</span>)
+                                </span>
                                 <span class="tip dslf dslf_tip"></span>
                                 <span class="singlerow right"><span class="edit dslf dslf_awarded"
                                                                     defaultString="1">1</span>xp</span>
@@ -211,7 +208,7 @@
                         <div class="head">MOTIVATION [<span class="dsf dsf_drive ink" defaultString="Drive">Drive</span>]
                         </div>
                         <div class="group">
-                            <span class="dsf dsf_motivation fullwidth" defaultString="Character's reason for doing what they do...">Character's reason for doing what they do...</span>
+                            <span class="dsf dsf_motivation fullwidth" defaultString="Click to Edit">Click to Edit</span>
                         </div>
                     </div>
 
@@ -228,8 +225,8 @@
                                 <div class="handle">
                                     <div></div>
                                 </div>
-                                <span class="left singlerow"><span class="edit dslf dslf_type"
-                                                                   defaultString="Source type">Source Type</span>:</span>
+                                <span class="left singlerow">(<span class="edit dslf dslf_type"
+                                                                   defaultString="Source type">Source Type</span>) </span>
                                 <span class="edit dslf dslf_description ink fullcolumn singlerow" defaultString="Description">Description</span>
                                 <span class="tip dslf dslf_tip"></span>
                             </li>
@@ -272,9 +269,9 @@
                         <div class="head">APPEARANCE</div>
                         <div class="group">
                             <div class="portraitholder">
-                                <span class="portrait readonly dsf dsf_avatar_image">.</span>
+                                <span class="portrait readonly dsf dsf_avatar_image"></span>
                             </div>
-                            <span class="dsf dsf_appearance ink" defaultString="Character appearance...">Character appearance...</span>
+                            <span class="dsf dsf_appearance ink" defaultString="Click to Edit">Click to Edit</span>
                         </div>
                     </div>
 
@@ -282,7 +279,7 @@
                     <div class="section">
                         <div class="head">BIOGRAPHY</div>
                         <div class="group">
-                            <span class="dsf dsf_bio ink fullwidth" defaultString="Character's history and backstory...">Character's history and backstory...</span>
+                            <span class="dsf dsf_bio ink fullwidth" defaultString="Click to Edit">Click to Edit</span>
                         </div>
                     </div>
 
@@ -290,7 +287,7 @@
                     <div class="section">
                         <div class="head">INDUCTION</div>
                         <div class="group">
-                            <span class="dsf dsf_induction ink fullwidth" defaultString="How did the character enter the secret world...">How did the character enter the secret world...</span>
+                            <span class="dsf dsf_induction ink fullwidth" defaultString="Click to Edit">Click to Edit</span>
                         </div>
                     </div>
 
@@ -300,8 +297,12 @@
 
 
                 <div class="page_foot">
-                    <div class="head"></div>
-                    Character By <span class="align_right dsf dsf_player readonly">Player</span> &#8226; Sheet By <span class="align_left dsf dsf_dst_author readonly">Author</span>
+                    <div>
+                        Character by <span class="align_right dsf dsf_player readonly">Player</span> for <span class="align_right dsf dsf_campaign readonly">Campaign</span>
+                    </div>
+                    <div class="copyright">
+                        Sheet By <span class="align_left dsf dsf_dst_author readonly">DST Author</span> based on the work of <a class="dst_dst_author_link" href="/profile/chainsawxiv"><span>ChainSawXIV</span></span></a>
+                    </div>
                 </div>
 
             </div>

@@ -1112,7 +1112,7 @@ function csx_pips(context){
 			continue;
 		
 		// Set the pixel threshold for each pip
-		field.pipThresholds = [0,14,28,42,59,73,87,101,118,132,146,160,177,191,205,219,236];
+		field.pipThresholds = (csx_opts.pipThresholds) ? csx_opts.pipThresholds : [0,14,28,42,56,73,87,101,115,129,146,160];
 		field.pipWidth = 15.0;
 		field.pipRadius = 6.0;
 		field.pipStrokeColor = '#000'; //'#19110E';

@@ -16,6 +16,10 @@
     display: inline-block;
   }
 
+  .section {
+    margin: 0 0 1em 1px;
+  }
+
   .ShortSection {
     display: inline-block;
     width: 100%;
@@ -27,6 +31,18 @@
   .section a {
     text-decoration: none;
   }
+
+  .portraitholder {
+    border:none;
+
+    .portrait {
+      background-color:transparent;
+      img {
+        border: 1px solid $ink_form;
+      }
+    }
+  }
+
 }
 
 
@@ -73,9 +89,34 @@ div.ds_aithanir_brimstone {
 
   }
 
+  .page_foot {
+    border-top: solid 1px $ink_form;
+    .dsf_campaign, .dsf_player {
+      @include typed;
+    }
+    .copyright {
+      font-size: 0.6rem;
+    }
+  }
+
+
+  .dossier {
+    .group {
+      display: inline-block;
+      width: 100%;
+    }
+    .portrait {
+      height: 200px;
+      width: 200px;
+      background-image: url(../../../common/images/attach_photo.png);
+    }
+  }
+
   .head {
     border-bottom: solid 1px $ink_form;
   }
+
+
 
   a {
     text-decoration: none;
@@ -83,7 +124,7 @@ div.ds_aithanir_brimstone {
   }
 
 
-
+  dl { margin: 0; }
 
 
 
