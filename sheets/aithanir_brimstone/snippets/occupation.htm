@@ -1,0 +1,135 @@
+<div class="page page_crunch active">
+
+
+	<!-- Sidebar -->
+	<div class="column thirdwidth colspace">
+
+		<div class="section dossier">
+			<div class="group">
+				<div class="portraitholder">
+					<span class="portrait readonly dsf dsf_avatar_image"></span>
+				</div>
+			</div>
+
+			<div class="group">
+				<dl>
+					<dt>D/O/B</dt>
+					<dd><span class="dsf dsf_dob" defaultString="dd/mm/yy">dd/mm/yy</span></dd>
+					<dt>Nationality</dt>
+					<dd><span class="dsf dsf_nationality" defaultString="Click to Edit">Click to Edit</span></dd>
+					<dt>Occupation</dt>
+					<dd><span class="dsf dsf_occupation" defaultString="Click to Edit">Click to Edit</span></dd>
+					<dt>Education</dt>
+					<dd><span class="dsf dsf_education" defaultString="Click to Edit">Click to Edit</span></dd>
+				</dl>
+			</div>
+		</div>
+
+
+		<div class="section">
+			<div class="head">HEALTH</div>
+			<div class="group">
+				<div class="pips_pool readonly dsf dsf_health"></div>
+				<span class="pool_status warning">Hurt</span>
+				<span class="pool_status danger">Crippled</span>
+				<span class="pool_status depleted">Dead</span>
+			</div>
+		</div>
+
+
+		<div class="section">
+			<div class="head">SANITY</div>
+			<div class="group">
+				<div class="pips_pool readonly dsf dsf_sanity"></div>
+				<span class="pool_status warning">Shaken</span>
+				<span class="pool_status danger">Traumatised</span>
+				<span class="pool_status depleted">Gone</span>
+			</div>
+		</div>
+
+	</div> <!-- End of sidebar -->
+
+
+
+
+	<!-- Abilities -->
+	<div class="column twothirdwidth">
+
+		<!-- Investigative abilities -->
+		<div class="section investigative">
+			<div class="head">INVESTIGATIVE ABILITIES
+				<span class="interface trash"></span>
+				<span class="interface add addto_investigative" title="Add Investigative ability"></span>
+			</div>
+			<ul class="group list list_investigative">
+				<li class="proto item">
+					<div class="handle">
+						<div></div>
+					</div>
+					<span class="edit dslf dslf_name pips5label singlerow" defaultString="Investigative ability">Investigative ability</span>
+					<span class="tip dslf dslf_tip"></span>
+					<span class="pips pipsRange_4 dslf readonly dslf_rating">1</span>
+				</li>
+				<span class="oldfields hidden">[{}]</span>
+				<span class="dsf dsf_investigative readonly hidden"></span>
+			</ul>
+		</div>  <!-- End of investigative -->
+
+
+
+		<!-- General abilities -->
+		<div class="section general">
+			<div class="head">GENERAL ABILITIES
+				<span class="interface trash"></span>
+				<span class="interface add addto_general" title="Add General ability"></span>
+			</div>
+			<ul class="group list list_general">
+				<li class="proto item">
+					<div class="handle">
+						<div></div>
+					</div>
+					<span class="edit dslf dslf_name pips5label singlerow" defaultString="General ability">General ability</span>
+					<span class="tip dslf dslf_tip"></span>
+					<span class="pips pipsRange_12 dslf readonly dslf_rating">1</span>
+				</li>
+				<span class="oldfields hidden">[{}]</span>
+				<span class="dsf dsf_general readonly hidden"></span>
+			</ul>
+		</div> <!-- End of general -->
+
+	</div> <!-- End of abilities -->
+
+
+
+
+	<!-- Experience -->
+	<div class="section">
+		<div class="head">EXPERIENCE
+			<span class="interface trash"></span>
+			<span class="interface add addto_experience" title="Add Experience Award"></span>
+		</div>
+		<ul class="group list list_experience">
+			<li class="proto item">
+				<div class="handle">
+					<div></div>
+				</div>
+				<span signlerow>
+                                    <span class="edit dslf dslf_case_name" defaultString="Case Name">Case Name</span> (
+                                    <span class="edit dslf dslf_date_awarded" defaultString="yyyy/mm/dd">yyyy/mm/dd</span>)
+                                </span>
+				<span class="tip dslf dslf_tip"></span>
+				<span class="singlerow right"><span class="edit dslf dslf_awarded"
+													defaultString="1">1</span>xp</span>
+			</li>
+			<span class="oldfields hidden">[{}]</span>
+			<span class="dsf dsf_experience readonly hidden"></span>
+		</ul>
+		<div class="group">
+			<div class="row">Experience Spent: <span class="singlerow right"><span
+					class="dsf dsf_experience_spent" defaultString="0">0</span>xp</span>
+			</div>
+		</div>
+	</div> <!-- End of experience -->
+
+
+</div> <!-- End of page_crunch -->

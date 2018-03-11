@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Special+Elite|Work+Sans:500");
+/*  Pips Pool */
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
+div.ds_aithanir_brimstone .pips_pool {
+  position: relative;
+  z-index: 2;
+  float: right;
+  top: 3px;
+  height: 17px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 2px; }
+  div.ds_aithanir_brimstone .pips_pool .pip {
+    position: absolute;
+    top: -2px;
+    height: 15px;
+    width: 15px;
+    display: inline-block; }
+    div.ds_aithanir_brimstone .pips_pool .pip.pipOn {
+      background-image: url(https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on.png); }
+    div.ds_aithanir_brimstone .pips_pool .pip.pipOff {
+      background-image: url(https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png); }
+  div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn {
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on.png"); }
+    div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn.warning {
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_warning.png"); }
+    div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn.danger {
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_danger.png"); }
+  div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn {
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on.png"); }
+    div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.warning {
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_warning.png"); }
+    div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.danger, div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.depleted {
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_danger.png"); }
+div.ds_aithanir_brimstone .pool_status {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  visibility: hidden; }
+  div.ds_aithanir_brimstone .pool_status.warning {
+    color: #ff5126; }
+  div.ds_aithanir_brimstone .pool_status.danger {
+    color: #d50000; }
+  div.ds_aithanir_brimstone .pool_status.depleted {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: line-through; }
+
+/* Splat Specific: Sheet */
+/* Component Includes */
+.csx .AttribGroup {
+  margin: 0px 0px 8px 0px;
+  padding: 0px 3px 0px 3px;
+  position: relative;
+  display: inline-block; }
+.csx .section {
+  margin: 0 0 1em 1px; }
+.csx .ShortSection {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 2px 1px;
+  min-height: 50px; }
+.csx .section a {
+  text-decoration: none; }
+.csx .portraitholder {
+  border: none; }
+  .csx .portraitholder .portrait {
+    background-color: transparent; }
+    .csx .portraitholder .portrait img {
+      border: 1px solid #554220; }
+
+/*  Splat Specific: */
+div.ds_aithanir_brimstone {
+  /* Splat Specific: Tabs */
+  /* Splat Specific: Tips */
+  /* Splat Specific: Editable */
+  /* List item stuff */
+  /* Splat Specific: Checks */
+  /* Splat Specific: Pips */ }
+  div.ds_aithanir_brimstone .main {
+    width: 648px;
+    padding: 0px 40px 80px 40px;
+    margin: 40px 0px 20px 0px;
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/top.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/bottom.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg");
+    background-position: top left, bottom left, top left;
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-color: #e4e5d5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #554220;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    color: #554220;
+    font-size: 14px;
+    line-height: 17px; }
+  div.ds_aithanir_brimstone .pagehead {
+    height: 56px; }
+    div.ds_aithanir_brimstone .pagehead .dsf {
+      font-family: 'Special Elite', serif;
+      text-transform: none;
+      font-size: 0.75rem;
+      color: #777;
+      font-size: 1.7rem;
+      margin: 0px 0px 9px 0px; }
+  div.ds_aithanir_brimstone .page_foot {
+    border-top: solid 1px #554220; }
+    div.ds_aithanir_brimstone .page_foot .dsf_campaign, div.ds_aithanir_brimstone .page_foot .dsf_player {
+      font-family: 'Special Elite', serif;
+      text-transform: none;
+      font-size: 0.75rem;
+      color: #777; }
+    div.ds_aithanir_brimstone .page_foot .copyright {
+      font-size: 0.6rem; }
+  div.ds_aithanir_brimstone .dossier .group {
+    display: inline-block;
+    width: 100%; }
+  div.ds_aithanir_brimstone .dossier .portrait {
+    height: 200px;
+    width: 200px;
+    background-image: url(https://aithanir.github.io/DST/common/images/attach_photo.png); }
+  div.ds_aithanir_brimstone .head {
+    border-bottom: solid 1px #554220; }
+  div.ds_aithanir_brimstone a {
+    text-decoration: none;
+    color: #554220; }
+  div.ds_aithanir_brimstone dl {
+    margin: 0; }
+  div.ds_aithanir_brimstone .tab.crunch {
+    background: url("https://chainsawxiv.github.io/DST/common/images/crunch.png") no-repeat 50% 50%, url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png");
+    background-size: 61% 70%, 100% 100%; }
+  div.ds_aithanir_brimstone .tab.crunch:not(.active):hover {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/crunch_hover.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png"); }
+  div.ds_aithanir_brimstone .tab.crunch.active {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/crunch.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_active.png"); }
+  div.ds_aithanir_brimstone .tab.psych {
+    background: url("https://chainsawxiv.github.io/DST/common/images/magic.png") no-repeat 50% 50%, url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png");
+    background-size: 61% 70%, 100% 100%; }
+  div.ds_aithanir_brimstone .tab.psych:not(.active):hover {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/magic_hover.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png"); }
+  div.ds_aithanir_brimstone .tab.psych.active {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/magic.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_active.png"); }
+  div.ds_aithanir_brimstone .tab.fluff {
+    background: url("https://chainsawxiv.github.io/DST/common/images/fluff.png") no-repeat 50% 50%, url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png");
+    background-size: 61% 70%, 100% 100%; }
+  div.ds_aithanir_brimstone .tab.fluff:not(.active):hover {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/fluff_hover.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png"); }
+  div.ds_aithanir_brimstone .tab.fluff.active {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/fluff.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_active.png"); }
+  div.ds_aithanir_brimstone .tipBox .corner.topLeft {
+    background-size: 15px 15px; }
+  div.ds_aithanir_brimstone .tipBox .corner.topRight {
+    background-size: 15px 15px; }
+  div.ds_aithanir_brimstone .tipBox .corner.bottomLeft {
+    background-size: 15px 15px; }
+  div.ds_aithanir_brimstone .tipBox .corner.bottomRight {
+    background-size: 15px 15px; }
+  div.ds_aithanir_brimstone .tipBox .contentBox {
+    background: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg") top left no-repeat;
+    background-size: 730px 730px;
+    background-color: #e4e5d5;
+    border-color: #554220; }
+    div.ds_aithanir_brimstone .tipBox .contentBox .tipArea,
+    div.ds_aithanir_brimstone .tipBox .contentBox .tipArea:hover {
+      background-color: rgba(255, 255, 224, 0.7);
+      border: 1px dotted rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      font-family: 'Sanchez', Sans Serif;
+      color: #554220; }
+  div.ds_aithanir_brimstone .page_foot {
+    text-align: center;
+    width: 600px;
+    margin: 22px 0px 0px 24px;
+    padding: 0px 0px 30px 0px;
+    position: absolute;
+    bottom: 12px; }
+  div.ds_aithanir_brimstone .statwidth {
+    width: 315px; }
+  div.ds_aithanir_brimstone .thirdwidth {
+    width: 207px; }
+  div.ds_aithanir_brimstone .twothirdwidth {
+    width: 430px; }
+  div.ds_aithanir_brimstone .halfwidth {
+    width: 300px; }
+  div.ds_aithanir_brimstone .dsf:not(.readonly),
+  div.ds_aithanir_brimstone .edit:not(.readonly) {
+    font-family: 'Special Elite', serif;
+    text-transform: none;
+    font-size: 0.75rem;
+    color: #777; }
+  div.ds_aithanir_brimstone .dsf.dsf_appearance,
+  div.ds_aithanir_brimstone .dsf.dsf_bio,
+  div.ds_aithanir_brimstone .dsf.dsf_induction,
+  div.ds_aithanir_brimstone .dsf.dsf_motivation {
+    width: auto;
+    display: block;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1rem;
+    text-transform: none;
+    color: #315ebe; }
+    div.ds_aithanir_brimstone .dsf.dsf_appearance p,
+    div.ds_aithanir_brimstone .dsf.dsf_bio p,
+    div.ds_aithanir_brimstone .dsf.dsf_induction p,
+    div.ds_aithanir_brimstone .dsf.dsf_motivation p {
+      margin-top: 17px; }
+      div.ds_aithanir_brimstone .dsf.dsf_appearance p:first-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_bio p:first-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_induction p:first-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_motivation p:first-of-type {
+        margin-top: 0px; }
+      div.ds_aithanir_brimstone .dsf.dsf_appearance p:last-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_bio p:last-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_induction p:last-of-type,
+      div.ds_aithanir_brimstone .dsf.dsf_motivation p:last-of-type {
+        margin-bottom: 17px; }
+  div.ds_aithanir_brimstone .dsf.fullwidth,
+  div.ds_aithanir_brimstone .edit.fullwidth {
+    width: 648px;
+    min-height: 50px;
+    display: inline-block;
+    line-height: 17px;
+    text-align: justify; }
+  div.ds_aithanir_brimstone .dsf.fullcolumn,
+  div.ds_aithanir_brimstone .edit.fullcolumn {
+    width: 285px; }
+  div.ds_aithanir_brimstone .list.twocolumn .column {
+    width: 310px; }
+  div.ds_aithanir_brimstone .twocolumn li.item {
+    width: 312px; }
+  div.ds_aithanir_brimstone .threecolumn .column {
+    width: 207px; }
+  div.ds_aithanir_brimstone .threecolumn li.item {
+    width: 210px; }
+  div.ds_aithanir_brimstone .list .column.colspace {
+    margin-right: 12px; }
+  div.ds_aithanir_brimstone .check .checkBorder {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/check_border.svg"); }
+  div.ds_aithanir_brimstone .check .checkOff {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off.png"); }
+  div.ds_aithanir_brimstone .check .checkOn {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on.png"); }
+  div.ds_aithanir_brimstone .pipBorder {
+    background-image: url("https://chainsawxiv.github.io/DST/common/images/pip_border.svg"); }
+  div.ds_aithanir_brimstone .pips .pipOff {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png"); }
+  div.ds_aithanir_brimstone .pips .pipOn {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on.png"); }
+  div.ds_aithanir_brimstone dt, div.ds_aithanir_brimstone dd {
+    width: 100%; }
+  div.ds_aithanir_brimstone dd {
+    margin: 0;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.05); }
+  div.ds_aithanir_brimstone.editable .list .dsf.fullwidth,
+  div.ds_aithanir_brimstone.editable .list .edit.fullwidth {
+    width: 550px; }
+  div.ds_aithanir_brimstone.editable .check .checkOff:hover {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off_hover.png"); }
+  div.ds_aithanir_brimstone.editable .check .checkOn:hover {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on_hover.png"); }
+  div.ds_aithanir_brimstone.editable .pips .pipOff:hover {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off_hover.png"); }
+  div.ds_aithanir_brimstone.editable .pips .pipOn:hover {
+    background-image: url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on_hover.png"); }
+
+/*# sourceMappingURL=sheet.css.map */
