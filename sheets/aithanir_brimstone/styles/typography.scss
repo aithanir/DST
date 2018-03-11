@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Special+Elite|Work+Sans:500');
+
+$ink_typewriter: #777;
+$ink_ballpoint: #5980d4;
+$ink_navy: darken($ink_ballpoint,12%);
+$ink_redletter: darkred;
+$ink_form: #554220;
+
+$paper: #e4e5d5;
+
+@mixin handwritten {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size:1rem;
+  text-transform: none;
+  color: $ink_navy;
+}
+
+@mixin printed {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: $ink_form
+}
+
+@mixin typed {
+  font-family: 'Special Elite', serif;
+  text-transform: none;
+  font-size: 0.75rem;
+  color: $ink_typewriter
+}
+
+
