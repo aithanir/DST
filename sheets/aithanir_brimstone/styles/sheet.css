@@ -20,17 +20,17 @@ div.ds_aithanir_brimstone .pips_pool {
     div.ds_aithanir_brimstone .pips_pool .pip.pipOff {
       background-image: url(https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png); }
   div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn {
-    background-image: url("../images/health_pip_on.png"); }
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on.png"); }
     div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn.warning {
-      background-image: url("../images/health_pip_on_warning.png"); }
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_warning.png"); }
     div.ds_aithanir_brimstone .pips_pool.dsf_health .pip.pipOn.danger {
-      background-image: url("../images/health_pip_on_danger.png"); }
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_danger.png"); }
   div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn {
-    background-image: url("../images/sanity_pip_on.png"); }
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on.png"); }
     div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.warning {
-      background-image: url("../images/sanity_pip_on_warning.png"); }
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_warning.png"); }
     div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.danger, div.ds_aithanir_brimstone .pips_pool.dsf_sanity .pip.pipOn.depleted {
-      background-image: url("../images/sanity_pip_on_danger.png"); }
+      background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_danger.png"); }
 div.ds_aithanir_brimstone .pool_status {
   position: absolute;
   top: 3px;
@@ -82,7 +82,7 @@ div.ds_aithanir_brimstone {
     width: 648px;
     padding: 0px 40px 80px 40px;
     margin: 40px 0px 20px 0px;
-    background-image: url("../images/top.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/bottom.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg");
+    background-image: url("https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/top.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/bottom.png"), url("https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg");
     background-position: top left, bottom left, top left;
     background-repeat: no-repeat, no-repeat, repeat-y;
     background-color: #e4e5d5;
@@ -118,7 +118,7 @@ div.ds_aithanir_brimstone {
   div.ds_aithanir_brimstone .dossier .portrait {
     height: 200px;
     width: 200px;
-    background-image: url(../../../common/images/attach_photo.png); }
+    background-image: url(https://aithanir.github.io/DST/common/images/attach_photo.png); }
   div.ds_aithanir_brimstone .head {
     border-bottom: solid 1px #554220; }
   div.ds_aithanir_brimstone a {

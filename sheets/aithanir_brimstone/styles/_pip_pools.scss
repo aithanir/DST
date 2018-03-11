@@ -41,10 +41,10 @@ div.ds_aithanir_brimstone {
 
     &.dsf_health {
       .pip.pipOn {
-        background-image:url('../images/health_pip_on.png');
+        background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on.png');
 
-        &.warning { background-image:url('../images/health_pip_on_warning.png'); }
-        &.danger  { background-image:url('../images/health_pip_on_danger.png'); }
+        &.warning { background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_warning.png'); }
+        &.danger  { background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/health_pip_on_danger.png'); }
       }
 
 
@@ -52,10 +52,10 @@ div.ds_aithanir_brimstone {
 
     &.dsf_sanity {
       .pip.pipOn {
-        background-image:url('../images/sanity_pip_on.png');
+        background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on.png');
 
-        &.warning { background-image:url('../images/sanity_pip_on_warning.png'); }
-        &.danger, &.depleted  { background-image:url('../images/sanity_pip_on_danger.png'); }
+        &.warning { background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_warning.png'); }
+        &.danger, &.depleted  { background-image:url('https://aithanir.github.io/DST/sheets/aithanir_brimstone/images/sanity_pip_on_danger.png'); }
       }
     }
   }

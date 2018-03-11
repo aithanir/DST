@@ -64,7 +64,7 @@ function aithanir_brimstone_dataPostLoad(data){
     // Include the shared script file
     var includes = document.createElement('script');
     includes.type = 'text/javascript';
-    includes.src = '../../common/scripts/csx_common_brimstone.js';
+    includes.src = 'https://aithanir.github.io/DST/common/scripts/csx_common_brimstone.js';
     includes.onload = function(){
 
         // Fix container properties
