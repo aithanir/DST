@@ -1,0 +1,458 @@
+/* Font Imports */
+
+@import url(https://fonts.googleapis.com/css?family=Cutive:400,700);
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Kalam);
+
+/* Component Includes */
+
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
+
+
+
+
+
+
+/* Splat Specific: Checks */
+
+div.ds_aithanir_brimstone .check .checkBorder{
+    background-image:url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+}
+
+div.ds_aithanir_brimstone .check .checkOff{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off.png');
+}
+
+div.ds_aithanir_brimstone.editable .check .checkOff:hover{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off_hover.png');
+}
+
+div.ds_aithanir_brimstone .check .checkOn{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on.png');
+}
+
+div.ds_aithanir_brimstone.editable .check .checkOn:hover{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on_hover.png');
+}
+
+
+
+/* Splat Specific: Pips */
+
+div.ds_aithanir_brimstone .pipBorder{
+    background-image:url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+}
+
+div.ds_aithanir_brimstone .pips .pipOff{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png');
+}
+
+div.ds_aithanir_brimstone.editable .pips .pipOff:hover{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off_hover.png');
+}
+
+div.ds_aithanir_brimstone .pips .pipOn{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on.png');
+}
+
+div.ds_aithanir_brimstone.editable .pips .pipOn:hover{
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on_hover.png');
+}
+
+
+
+/* Splat Specific: Tabs */
+
+div.ds_aithanir_brimstone .tab.crunch{
+    background:
+            url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png');
+    background-size:
+            61% 70%,
+            100% 100%;
+}
+div.ds_aithanir_brimstone .tab.crunch:not(.active):hover{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png');
+}
+div.ds_aithanir_brimstone .tab.crunch.active{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_active.png');
+}
+
+div.ds_aithanir_brimstone .tab.psych{
+    background:
+            url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png');
+    background-size:
+            61% 70%,
+            100% 100%;
+}
+div.ds_aithanir_brimstone .tab.psych:not(.active):hover{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png');
+}
+div.ds_aithanir_brimstone .tab.psych.active{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_active.png');
+}
+
+div.ds_aithanir_brimstone .tab.equipment{
+    background:
+            url('https://chainsawxiv.github.io/DST/common/images/equipment.png') no-repeat 50% 50%,
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab03_inactive.png');
+    background-size:
+            61% 70%,
+            100% 100%;
+}
+div.ds_aithanir_brimstone .tab.equipment:not(.active):hover{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/equipment_hover.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab03_inactive.png');
+}
+div.ds_aithanir_brimstone .tab.equipment.active{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/equipment.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab03_active.png');
+}
+
+div.ds_aithanir_brimstone .tab.fluff{
+    background:
+            url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png');
+    background-size:
+            61% 70%,
+            100% 100%;
+}
+div.ds_aithanir_brimstone .tab.fluff:not(.active):hover{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png');
+}
+div.ds_aithanir_brimstone .tab.fluff.active{
+    background-image:
+            url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_active.png');
+}
+
+
+
+/* Splat Specific: Tips */
+
+div.ds_aithanir_brimstone .tipBox .corner.topLeft{
+    background-size:15px 15px;
+}
+div.ds_aithanir_brimstone .tipBox .corner.topRight{
+    background-size:15px 15px;
+}
+div.ds_aithanir_brimstone .tipBox .corner.bottomLeft{
+    background-size:15px 15px;
+}
+div.ds_aithanir_brimstone .tipBox .corner.bottomRight{
+    background-size:15px 15px;
+}
+
+div.ds_aithanir_brimstone .tipBox .contentBox{
+    background:
+            url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg') top left no-repeat;
+    background-size:
+            730px 730px;
+    background-color:#e4e5d5;
+    border-color:#554220;
+}
+
+div.ds_aithanir_brimstone .tipBox .contentBox .tipArea,
+div.ds_aithanir_brimstone .tipBox .contentBox .tipArea:hover{
+    background-color:rgba(255,255,224,0.7);
+    border:1px dotted rgba(0,0,0,0.3);
+    border-radius:4px;
+    font-family:'Sanchez', Sans Serif;
+    color:#554220;
+}
+
+
+
+/* Splat Specific: Editable */
+
+div.ds_aithanir_brimstone .dsf:not(.readonly),
+div.ds_aithanir_brimstone .edit:not(.readonly),
+div.ds_aithanir_brimstone .dsf_bio{
+    font-family:Special Elite, Serif;
+}
+
+
+
+
+/* Splat Specific: Sheet */
+
+div.ds_aithanir_brimstone .typewriter {
+    color: #554220;
+    font-family: "Special Elite", Serif;
+}
+
+div.ds_aithanir_brimstone .main{
+
+    width:648px;
+    padding:0px 40px 80px 40px;
+    margin:40px 0px 20px 0px;
+
+    background-image:url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/top.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/bottom.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg');
+    background-position:top left, bottom left, top left;
+    background-repeat:no-repeat, no-repeat, repeat-y;
+    background-color:#e4e5d5;
+
+    border-style:solid;
+    border-width:1px;
+    border-color:#554220;
+
+    font-family: Special Elite, Serif;
+    font-size:14px;
+    line-height:17px;
+    color:#554220;
+}
+
+.ds_aithanir_brimstone .page_crunch .section.investigative,
+.ds_aithanir_brimstone .page_crunch .section.general
+{
+    font-size:12px;
+}
+
+div.ds_aithanir_brimstone .ink {
+    color: #001884;
+    font-family: "Kalam", cursive !important;
+}
+
+
+.ds_aithanir_brimstone .dsf.dsf_motivation,
+.ds_aithanir_brimstone .dsf.dsf_appearance,
+.ds_aithanir_brimstone .dsf.dsf_bio,
+.ds_aithanir_brimstone .dsf.dsf_induction {
+    color: #001884;
+    font-size: 14px;
+    font-family: "Kalam", cursive;
+    width: auto;
+    display:block;
+}
+.ds_aithanir_brimstone .dsf.dsf_motivation p,
+.ds_aithanir_brimstone .dsf.dsf_appearance p,
+.ds_aithanir_brimstone .dsf.dsf_bio p,
+.ds_aithanir_brimstone .dsf.dsf_induction p {
+    margin-top:17px;
+}
+
+.ds_aithanir_brimstone .dsf.dsf_motivation p:first-of-type,
+.ds_aithanir_brimstone .dsf.dsf_appearance p:first-of-type,
+.ds_aithanir_brimstone .dsf.dsf_bio p:first-of-type,
+.ds_aithanir_brimstone .dsf.dsf_induction p:first-of-type {
+    margin-top:0px;
+}
+
+.ds_aithanir_brimstone .dsf.dsf_motivation p:last-of-type,
+.ds_aithanir_brimstone .dsf.dsf_appearance p:last-of-type,
+.ds_aithanir_brimstone .dsf.dsf_bio p:last-of-type,
+.ds_aithanir_brimstone .dsf.dsf_induction p:last-of-type {
+    margin-bottom: 24px;
+}
+
+dl.dossier dt {
+    color:#554220;
+    font-family: Special Elite, Serif;
+    font-size: 14px;
+}
+
+.ds_aithanir_brimstone dl.dossier dd {
+    color: #001884;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: "Kalam", cursive;
+    font-size: 14px;
+
+    text-align: right;
+    margin: 0;
+}
+
+.ds_aithanir_brimstone dl.dossier dd:last-of-type {
+    margin-bottom: 17px;
+}
+
+
+
+
+
+
+div.ds_aithanir_brimstone .dsf.fullwidth,
+div.ds_aithanir_brimstone .edit.fullwidth{
+    width:648px;
+    min-height:50px;
+    display:inline-block;
+    line-height:17px;
+    text-align:justify;
+}
+
+div.ds_aithanir_brimstone.editable .list .dsf.fullwidth,
+div.ds_aithanir_brimstone.editable .list .edit.fullwidth{
+    width:550px;
+}
+
+
+div.ds_aithanir_brimstone .name{
+    display:inline-block;
+    font-size:18pt;
+    margin:0px 0px 9px 0px;
+    width: 540px;
+    height:16px;
+}
+
+div.ds_aithanir_brimstone .head{
+    border-bottom:solid 1px #554220;
+}
+
+div.ds_aithanir_brimstone a{
+    text-decoration:none;
+    color:#554220;
+}
+
+div.ds_aithanir_brimstone .section a{
+    text-decoration:underline;
+}
+
+
+.ds_aithanir_brimstone .dsf.dsf_type,
+.ds_aithanir_brimstone .dsf.dsf_campaign {
+    color:#554220;
+    font-size: 24px;
+}
+
+.ds_aithanir_brimstone .dsf.dsf_campaign {
+    color:#554220;
+    text-transform: uppercase;
+    margin: 17px 0;
+}
+
+
+
+
+div.ds_aithanir_brimstone .edit.pips5label{
+    width:300px;
+}
+
+div.ds_aithanir_brimstone .edit.pips5labelwtip{
+    width:210px;
+}
+
+div.ds_aithanir_brimstone .page_foot{
+    text-align:center;
+    width:600px;
+    margin:22px 0px 0px 24px;
+    padding:0px 0px 30px 0px;
+    position:absolute;
+    bottom:12px;
+}
+
+
+div.ds_aithanir_brimstone .statwidth{
+    width:315px;
+}
+
+div.ds_aithanir_brimstone .thirdwidth{
+    width:207px;
+}
+
+div.ds_aithanir_brimstone .twothirdwidth{
+    width:431px;
+}
+
+div.ds_aithanir_brimstone .halfwidth{
+    width:300px;
+}
+
+
+div.ds_aithanir_brimstone .SkillTypeHead{
+    font-size:12pt;
+    font-weight:normal;
+    letter-spacing:3px;
+    text-align:center;
+}
+
+div.ds_aithanir_brimstone .SkillTypeDesc{
+    font-size:9pt;
+    font-weight:normal;
+    text-align:center;
+}
+
+
+
+
+
+
+/* List item stuff */
+
+.csx .AttribGroup, .csx .InvestGroup {
+    margin:0px 0px 8px 0px;
+    padding:0px 3px 0px 3px;
+    position:relative;
+    display:inline-block;
+}
+
+.InvestGroup .row {
+    font-size: 0.6rem;
+}
+
+.csx .ShortSection{
+    display:inline-block;
+    width:100%;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 2px 1px;
+    min-height:50px;
+}
+
+
+
+div.ds_aithanir_brimstone .dsf.fullcolumn,
+div.ds_aithanir_brimstone .edit.fullcolumn{
+    width:285px;
+}
+
+div.ds_aithanir_brimstone .list.twocolumn .column{
+    width:310px;
+}
+div.ds_aithanir_brimstone .twocolumn li.item{
+    width:312px;
+}
+div.ds_aithanir_brimstone.threecolumn .column{
+    width:207px;
+}
+div.ds_aithanir_brimstone .threecolumn li.item{
+    width:210px;
+}
+div.ds_aithanir_brimstone .list .column.colspace{
+    margin-right:12px;
+}
+
+
+div.ds_aithanir_brimstone .dsf.dsf_appearance{
+    width: auto;
+    display:block;
+}
+div.ds_aithanir_brimstone .dsf.dsf_appearance p{
+    margin-top:17px;
+}
+div.ds_aithanir_brimstone .dsf.dsf_appearance p:first-of-type{
+    margin-top:0px;
+}
+
+
+
+
+
+
+

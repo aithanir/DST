@@ -1,0 +1,377 @@
+/* Splat Specific: Sheet */
+
+
+
+
+
+
+/* Component Includes */
+@import url(https://chainsawxiv.github.io/DST/common/css/csx_exalted_common.css);
+
+.csx {
+  .AttribGroup {
+    margin: 0px 0px 8px 0px;
+    padding: 0px 3px 0px 3px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .section {
+    margin: 0 0 1em 1px;
+  }
+
+  .ShortSection {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 2px 1px;
+    min-height: 50px;
+  }
+
+  .section a {
+    text-decoration: none;
+  }
+
+  .portraitholder {
+    border:none;
+
+    .portrait {
+      background-color:transparent;
+      img {
+        border: 1px solid $ink_form;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+/*  Splat Specific: */
+
+div.ds_aithanir_brimstone {
+
+
+  .main {
+
+    width: 648px;
+    padding: 0px 40px 80px 40px;
+    margin: 40px 0px 20px 0px;
+
+    background-image: url('../images/top.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/bottom.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg');
+    background-position: top left, bottom left, top left;
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-color: $paper;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: $ink_form;
+
+    @include printed;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+
+  .pagehead {
+    height:56px;
+    .dsf {
+      @include typed;
+      font-size: 1.7rem;
+      margin: 0px 0px 9px 0px;
+    }
+
+  }
+
+  .page_foot {
+    border-top: solid 1px $ink_form;
+    .dsf_campaign, .dsf_player {
+      @include typed;
+    }
+    .copyright {
+      font-size: 0.6rem;
+    }
+  }
+
+
+  .dossier {
+    .group {
+      display: inline-block;
+      width: 100%;
+    }
+    .portrait {
+      height: 200px;
+      width: 200px;
+      background-image: url(../../../common/images/attach_photo.png);
+    }
+  }
+
+  .head {
+    border-bottom: solid 1px $ink_form;
+  }
+
+
+
+  a {
+    text-decoration: none;
+    color: $ink_form;
+  }
+
+
+  dl { margin: 0; }
+
+
+
+
+  /* Splat Specific: Tabs */
+
+  .tab.crunch {
+    background: url('https://chainsawxiv.github.io/DST/common/images/crunch.png') no-repeat 50% 50%,
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png');
+    background-size: 61% 70%,
+    100% 100%;
+  }
+  .tab.crunch:not(.active):hover {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/crunch_hover.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_inactive.png');
+  }
+  .tab.crunch.active {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/crunch.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab01_active.png');
+  }
+
+  .tab.psych {
+    background: url('https://chainsawxiv.github.io/DST/common/images/magic.png') no-repeat 50% 50%,
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png');
+    background-size: 61% 70%,
+    100% 100%;
+  }
+  .tab.psych:not(.active):hover {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/magic_hover.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_inactive.png');
+  }
+  .tab.psych.active {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/magic.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab02_active.png');
+  }
+
+
+  .tab.fluff {
+    background: url('https://chainsawxiv.github.io/DST/common/images/fluff.png') no-repeat 50% 50%,
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png');
+    background-size: 61% 70%,
+    100% 100%;
+  }
+  .tab.fluff:not(.active):hover {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/fluff_hover.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_inactive.png');
+  }
+  .tab.fluff.active {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/fluff.png'),
+    url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/tab04_active.png');
+  }
+
+
+
+
+  /* Splat Specific: Tips */
+  .tipBox {
+    .corner.topLeft {
+      background-size: 15px 15px;
+    }
+    .corner.topRight {
+      background-size: 15px 15px;
+    }
+    .corner.bottomLeft {
+      background-size: 15px 15px;
+    }
+    .corner.bottomRight {
+      background-size: 15px 15px;
+    }
+
+    .contentBox {
+      background: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/background.jpg') top left no-repeat;
+      background-size: 730px 730px;
+      background-color: $paper;
+      border-color: $ink_form;
+
+      .tipArea,
+      .tipArea:hover {
+        background-color: rgba(255, 255, 224, 0.7);
+        border: 1px dotted rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        font-family: 'Sanchez', Sans Serif;
+        color: $ink_form;
+      }
+    }
+
+
+  }
+
+
+
+  .page_foot {
+    text-align: center;
+    width: 600px;
+    margin: 22px 0px 0px 24px;
+    padding: 0px 0px 30px 0px;
+    position: absolute;
+    bottom: 12px;
+  }
+
+  .statwidth {
+    width: 315px;
+  }
+
+  .thirdwidth {
+    width: 207px;
+  }
+
+  .twothirdwidth {
+    width: 430px;
+  }
+
+  .halfwidth {
+    width: 300px;
+  }
+
+
+
+
+
+
+  /* Splat Specific: Editable */
+
+  .dsf:not(.readonly),
+  .edit:not(.readonly)
+  {
+    @include typed;
+  }
+
+  .dsf.dsf_appearance,
+  .dsf.dsf_bio,
+  .dsf.dsf_induction,
+  .dsf.dsf_motivation
+  {
+    width: auto;
+    display: block;
+    @include handwritten;
+
+    p {
+
+      margin-top: 17px;
+      &:first-of-type {
+        margin-top: 0px;
+      }
+      &:last-of-type {
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+
+
+  .dsf.fullwidth,
+  .edit.fullwidth {
+    width: 648px;
+    min-height: 50px;
+    display: inline-block;
+    line-height: 17px;
+    text-align: justify;
+  }
+
+  .dsf.fullcolumn,
+  .edit.fullcolumn {
+    width: 285px;
+  }
+
+  /* List item stuff */
+
+  .list.twocolumn .column {
+    width: 310px;
+  }
+  .twocolumn li.item {
+    width: 312px;
+  }
+  .threecolumn .column {
+    width: 207px;
+  }
+  .threecolumn li.item {
+    width: 210px;
+  }
+  .list .column.colspace {
+    margin-right: 12px;
+  }
+
+  /* Splat Specific: Checks */
+
+  .check .checkBorder {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/check_border.svg');
+  }
+
+  .check .checkOff {
+    background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off.png');
+  }
+
+
+  .check .checkOn {
+    background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on.png');
+  }
+
+
+  /* Splat Specific: Pips */
+
+  .pipBorder {
+    background-image: url('https://chainsawxiv.github.io/DST/common/images/pip_border.svg');
+  }
+
+  .pips .pipOff {
+    background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off.png');
+  }
+
+  .pips .pipOn {
+    background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on.png');
+  }
+
+  dt, dd {
+    width:100%;
+  }
+  dd {
+    margin:0;
+    text-align:right;
+    background-color: rgba(0,0,0,0.05)
+  }
+
+  &.editable {
+
+    .list .dsf.fullwidth,
+    .list .edit.fullwidth {
+      width: 550px;
+    }
+    .check .checkOff:hover {
+      background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_off_hover.png');
+    }
+
+    .check .checkOn:hover {
+      background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/check_on_hover.png');
+    }
+
+    .pips .pipOff:hover {
+      background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_off_hover.png');
+    }
+
+    .pips .pipOn:hover {
+      background-image: url('https://chainsawxiv.github.io/DST/sheets/Tendonin_nWoD_Hunter/images/pip_on_hover.png');
+    }
+
+  }
+
+
+}
+
